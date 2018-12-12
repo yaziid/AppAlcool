@@ -8,9 +8,6 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-import java.io.IOException;
-import java.util.List;
-
 import okhttp3.OkHttpClient;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -65,21 +62,21 @@ public class MainActivity extends AppCompatActivity {
 
         MelService client =  retrofit.create(MelService.class);
 
-        Call<Nhits> call = client.listRecords("base-sirene", "LILLE", "Débits de boissons");
+        Call<EnsembleEtab> call = client.listRecords("base-sirene", "LILLE", "Débits de boissons");
 
 
-        call.enqueue(new Callback<Nhits>() {
+        call.enqueue(new Callback<EnsembleEtab>() {
             @Override
-            public void onResponse(Call<Nhits> call, Response<Nhits> response) {
+            public void onResponse(Call<EnsembleEtab> call, Response<EnsembleEtab> response) {
                 TextView text = (TextView)findViewById(R.id.hello);
                 //call.execute().body().getNhits()
 
-                text.setText((CharSequence) response.body().getNhits());
+                text.setText(response.body().getRecords().get(0).getFields().getL2_normalisee());
 
             }
 
             @Override
-            public void onFailure(Call<Nhits> call, Throwable t) {
+            public void onFailure(Call<EnsembleEtab> call, Throwable t) {
 
             }
         });
