@@ -6,26 +6,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="vertical">
 
 
         <EditText
             android:id="@+id/nom_biere"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_width="250dp"
             android:hint="Nom de la bière"
             android:inputType="text"/>
         <EditText
             android:id="@+id/prix_biere"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_width="250dp"
             android:hint="Prix de la bière"
             android:inputType="numberDecimal|numberSigned"/>
         <EditText
             android:id="@+id/alcool_biere"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_width="250dp"
             android:hint="Pourcentage alcool"
             android:inputType="numberDecimal|numberSigned"/>

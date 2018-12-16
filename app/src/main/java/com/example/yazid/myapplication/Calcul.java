@@ -64,7 +64,7 @@ public class Calcul extends AppCompatActivity {
                         !Strings.isEmptyOrWhitespace(prix_biere.getText().toString()) &&
                         !Strings.isEmptyOrWhitespace(alcool_biere.getText().toString())){
                     nom_bieres.add(nom_biere.getText().toString());
-                    prix_bieres.add("36");
+                    prix_bieres.add(nom_biere.getText().toString());
                     adapter.notifyDataSetChanged();
                 }
             }
