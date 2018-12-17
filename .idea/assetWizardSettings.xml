@@ -19,8 +19,8 @@
                                   <option name="values">
                                     <map>
                                       <entry key="assetType" value="IMAGE" />
-                                      <entry key="imageAsset" value="C:\Users\Yazid\Desktop\baseline_favorite_black_18dp.png" />
-                                      <entry key="outputName" value="ic_coeur" />
+                                      <entry key="imageAsset" value="C:\Users\Yazid\Desktop\baseline_map_black_18dp.png" />
+                                      <entry key="outputName" value="ic_map" />
                                     </map>
                                   </option>
                                 </PersistentState>

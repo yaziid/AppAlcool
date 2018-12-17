@@ -43,11 +43,22 @@
             android:inputType="numberDecimal|numberSigned"/>
         </android.support.design.widget.TextInputLayout>
 
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/quantite_biere"
+                android:layout_height="wrap_content"
+                android:layout_width="250dp"
+                android:hint="Quantité (En cl)"
+                android:inputType="numberDecimal|numberSigned"/>
+        </android.support.design.widget.TextInputLayout>
+
         <Button
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:text="Calculer" />
 
         <android.support.v7.widget.RecyclerView
             xmlns:android="http://schemas.android.com/apk/res/android"
@@ -73,7 +84,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:itemBackground="@color/colorPrimary"
+        app:itemBackground="@color/colorMauve"
         app:itemIconTint="#ffffff"
         app:itemTextColor="#ffffff"
         app:menu="@menu/navigation"/>
